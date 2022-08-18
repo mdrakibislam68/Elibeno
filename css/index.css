@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .p{
+        @apply font-['Manrope'] text-[24px] font-normal
+    }
+    .p-sm{
+        @apply font-['Manrope'] text-[16px] font-normal
+    }
+    .p-xm{
+        @apply font-['Manrope'] text-white text-[12px] font-normal
+    }
+    .p-md{
+        @apply font-['Syne'] text-white text-[16px] font-semibold leading-[19px]
+    }
+    .drop-item{
+        @apply text-gray-700 block px-4 py-2 text-sm 
+    }
+    .h1{
+        @apply text-white text-5xl leading-[58px] font-bold font-['Syne']
+    }
+    .active{
+        @apply text-[#F9574B] hover:bg-gray-700    
+    }
+    .active2{
+        @apply bg-[#FA5C6D]
+    }
+    th:nth-child(1),td:nth-child(1){
+        @apply pl-4
+    }
+    .show {
+        display:block;
+    }
+    .filterDiv {
+        display: none;
+    }
+      .btn:hover {
+        background-color: #666;
+      }
+      .btn.active3 {
+        background-color: #666;
+        color: white;
+      }
+
+    /* .nav-link{
+        @apply text-gray-300
+    } */
+}
+
+.hero{
+    background-image: url("img/bg.jpg");
+}

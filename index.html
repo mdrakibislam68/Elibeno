@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Elibeno</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+      </style>
+</head>
+
+<body class="bg-[#1A1E49] ">
+    <section class="fixed w-[100%] top-0 nav ">
+        <div class="container"> 
+         <!-- This example requires Tailwind CSS v2.0+ -->
+          <nav class="">
+            <div class="">
+              <div class=" flex items-center justify-between h-16">
+                <div class="inset-y-0   flex items-center md:hidden">
+                  <!-- Mobile menu button-->
+                  <button type="button" id="mobile-btn" onclick="myFunction()" class="peer inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="md:flex-1  md:flex md:justify-between items-center  ">
+                  <div class="flex-shrink-0 flex items-center">
+                    <img class="hidden md:block h-8 w-auto" src="img/nav-hero/logo.png" alt="Workflow">
+                    <h1 class="text-2xl md:text-4xl font-bold text-white font-['Syne']">Elibeno</h1>
+                  </div>
+                  <div class="hidden md:block justify-self-end text-gray-300 font-medium sm:ml-6">
+                    <ul class="flex items-center space-x-2 mr-8">
+                      <li class="nav-item active text-sm  hover:bg-gray-700 px-3 py-2 rounded-md ">
+                         <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                      </li>
+                      <li class="nav-item group relative flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 py-2 rounded-md text-sm ">
+                        <a href="#" class="nav-link">
+                          Explore 
+                        </a>
+                        <img class="w-2.5 h-1.5 flex " src="img/nav-hero/Vector.png" alt="">
+                        <div  class="hidden group-hover:flex absolute flex-col top-[35px] left-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                          <a href="/html/explore.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
+                          <a href="/html/auction.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Live Auction</a>
+                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">contact</a>
+                        </div>
+                      </li>
+                      <li class="nav-item px-3 py-2 rounded-md  hover:bg-gray-700  text-sm font-medium">
+                        <a href="/html/activity.html" class=" nav-link  ">Activity</a>
+                      </li>
+                      <li class="nav-item  px-3 py-2 rounded-md  hover:bg-gray-700  text-sm font-medium">
+                        <a href="/html/ranking.html" class=" nav-link  ">Ranking</a>
+                      </li>
+
+                      <li class="nav-item group relative after:contents  flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 py-2 rounded-md text-sm font-medium">
+                        <a href="#" class="">
+                          Pages 
+                        </a>
+                        <img class="w-2.5 h-1.5 flex " src="img/nav-hero/Vector.png" alt="">
+                        <div  class="hidden group-hover:block absolute  flex-col top-[35px] left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                          <a href="/html/upload.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Upload</a>
+                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">contact</a>
+                        </div>
+                      </li>
+                      <li class="nav-item px-3 py-2 rounded-md   hover:bg-gray-700   text-sm font-medium">
+                        <a type="" class="" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                          Contact
+                      </li>
+                      
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+                <div class="inset-y-0  flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 md:ml-1 sm:pr-0">
+
+                  <!-- user  -->
+                   <div class="ml-1 relative">
+                    <div>
+                      <a href="#">
+                        <button type="button" data-dropdown-toggle="dropdown" class=" flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button"  aria-expanded="false" aria-haspopup="true">
+                          <span class="sr-only">Open user menu</span>
+                          <img class="h-[22px] w-[22px] rounded-full " src="img/nav-hero/user.png" alt="">
+                          <p class="text-[#C1C5E0] hidden lg:block font-['Manrope'] ml-2">140.05ETH</p>
+                        </button>
+                      </a>
+                      
+                    </div>  
+
+
+                    <div id="dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                      <!-- Active: "bg-gray-100", Not Active: "" -->
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+                    </div>
+                  </div>
+                  <div class=" relative">
+                    <a href="#" class="">
+                      <img class="mx-3 " id="src-img" src="img/nav-hero/search.png" alt="">
+                      <input id="search-input" type="text" class=" hidden absolute top-[-5px] left-[-150px] border-none  focus:hidden rounded-md">
+                      </a>
+
+                  </div>
+                  <div>
+                    <button type="button" class="flex items-center relative p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                      <img src="img/nav-hero/noti.svg" class="" alt="">
+                      <span class="font-['Manrope'] text-[8px] font-normal absolute right-0 bg-[#F9574B] rounded-full w-3 h-3 top-0">7</span>
+                      
+                    </button>
+                  </div>
+                 
+
+                 
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden peer-hover:block bg-[#1A1E49]" id="mobile-menu">
+              <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+    </section>
+
+    <section class="pt-28 xl:pt-[134px]  lg:pb-[135px]" >
+      <div class="container">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="max-w-[600px] md:mb-12 mb-0">
+            <div class="max-w-[100%] text-white font-['Syne'] ">
+              <h1 class="mb-4 font-bold text-[48px] lg:text-[64px] leading-[55px] md:leading-[120%]">Collect rare digital arts & nft’s today.</h1>
+              <p class="p-sm md:text-[24px] leading-7 md:leading-10">Business requests of best or shall it global lorem is
+                assignment. From</p>
+                <div class="btn my-7 lg:my-14">
+                  <button class="p text-base text-white bg-[#FA5C6D] rounded-lg flex items-center p-3 md:p-4">Upload item <img class="ml-3" src="img/nav-hero/up.jpg" alt=""> </button>
+                </div>
+                <div class="flex xm:flex-row gap-y-4 sm:flex-row gap-x-10 md:gap-x-16 ">
+                  <div class="">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl leading-8 md:leading-[58px] font-medium md:font-bold font-['Syne] ">68,686+</h1>
+                    <p class="text-base  md:text-2xl font-['Syne] font-normal">nft’s Items</p>
+                  </div>
+                  <div class="">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl leading-8 md:leading-[58px] font-medium md:font-bold font-['Syne] ">6.68 ETH</h1>
+                    <p class="text-base  md:text-2xl font-['Syne] font-normal">Last Bid</p>
+                  </div>
+                </div>
+            </div>
+            
+          </div>
+            <div class="hero-img hidden sm:block h-56 md:auto">
+              <img class="h-auto" src="img/nav-hero/wolf.png" alt="">
+            </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="explore mt-9 mb-24">
+      <div class="container">
+        <div class="flex justify-between mb-16">
+          <h1 class="text-white text-3xl md:text-4xl lg:text-5xl leading-[58px] font-bold font-['Syne']">Explore NFTs</h1>
+          <button class="bg-[#1E2356] rounded-lg flex items-center gap-x-2 font-'Manrope' text-white text-base leading-7 font-semibold py-[8px] md:py-[12px] px-9 md:px-11">Explore More <img class="w-3 h-3" src="img/explore/btn-circle.png" alt=""></button>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="img/explore/Rectangle 159.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#1A1E49] rounded w-7 h-7 flex justify-center">
+                <img src="img/explore/eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="img/explore/img.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#1A1E49] rounded w-7 h-7 flex justify-center">
+                <img src="img/explore/eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+          
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="img/explore/img-1.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#1A1E49] rounded w-7 h-7 flex justify-center">
+                <img src="img/explore/eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="img/explore/img-2.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#1A1E49] rounded w-7 h-7 flex justify-center">
+                <img src="img/explore/eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="img/explore/New folder/Rectangle 159.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#1A1E49] rounded w-7 h-7 flex justify-center">
+                <img src="img/explore/eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="img/explore/New folder/img.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#1A1E49] rounded w-7 h-7 flex justify-center">
+                <img src="img/explore/eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+          
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="img/explore/New folder/img-1.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#1A1E49] rounded w-7 h-7 flex justify-center">
+                <img src="img/explore/eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="img/explore/New folder/img-2.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#1A1E49] rounded w-7 h-7 flex justify-center">
+                <img src="img/explore/eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catagory bg-[#1E2356]">
+      <div class="container">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6  gap-6 py-28">
+          <div class="group  py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group  py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+
+          <div class="group   py-7 bg-[#1A1E49] hover:bg-[#FA5C6D]  rounded-lg text-center flex flex-col justify-center items-center gap-y-4">
+            <div>
+              <img src="img/catagory/Vector.png" alt="">
+            </div>
+            <p class="text-[#C1C5E0] group-hover:text-white font-bold text-base leading-5 font-['Red Hat Display']">Digital Artwork </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore mt-9 mb-24">
+      <div class="container">
+        <div class="flex justify-between mb-16">
+          <h1 class="text-white text-3xl md:text-4xl lg:text-5xl leading-[58px] font-bold font-['Syne']">Explore NFTs</h1>
+          <button class="bg-[#1E2356] rounded-lg flex items-center gap-x-2 font-'Manrope' text-white text-base leading-7 font-semibold py-[8px] md:py-[12px] px-9 md:px-11">Explore More <img class="w-3 h-3" src="img/explore/btn-circle.png" alt=""></button>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="item">
+            <div class="img">
+              <img src="img/nft/collection cart.png" alt="">
+             </div>
+             <div class="">
+              <h1 class="p-md mt-4 mb-2">Creative arts Collections</h1>
+              <div class="flex">
+                <p class="p-xm">By @Carry_Michel</p>
+                <div class="p-1">
+                  <img src="img/explore/correct.png" alt="">
+                </div>
+               </div>
+               <div class="flex flex-row items-center mt-1">
+                <div class="">
+                  <img class="w-3 h-3" src="img/nft/Group 1053.png" alt="">
+                </div>
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items </p>
+                <div class="p-1 ">
+                  <img class="w-3 h-3" src="img/nft/Group 1053-1.png" alt="">
+                </div>
+                <p class="text-white font-['Manrope'] text-[12px] font-medium leading-[14px]">8.6K</p>
+               </div>
+             </div>
+          </div>
+
+          <div class="item">
+            <div class="img">
+              <img src="img/nft/collection cart-1.png" alt="">
+             </div>
+             <div class="">
+              <h1 class="p-md mt-4 mb-2">Creative arts Collections</h1>
+              <div class="flex">
+                <p class="p-xm">By @Carry_Michel</p>
+                <div class="p-1">
+                  <img src="img/explore/correct.png" alt="">
+                </div>
+               </div>
+               <div class="flex flex-row items-center mt-1">
+                <div class="">
+                  <img class="w-3 h-3" src="img/nft/Group 1053.png" alt="">
+                </div>
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items </p>
+                <div class="p-1 ">
+                  <img class="w-3 h-3" src="img/nft/Group 1053-1.png" alt="">
+                </div>
+                <p class="text-white font-['Manrope'] text-[12px] font-medium leading-[14px]">8.6K</p>
+               </div>
+             </div>
+          </div>
+
+          <div class="item">
+            <div class="img">
+              <img src="img/nft/collection cart-2.png" alt="">
+             </div>
+             <div class="">
+              <h1 class="p-md mt-4 mb-2">Creative arts Collections</h1>
+              <div class="flex">
+                <p class="p-xm">By @Carry_Michel</p>
+                <div class="p-1">
+                  <img src="img/explore/correct.png" alt="">
+                </div>
+               </div>
+               <div class="flex flex-row items-center mt-1">
+                <div class="">
+                  <img class="w-3 h-3" src="img/nft/Group 1053.png" alt="">
+                </div>
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items </p>
+                <div class="p-1 ">
+                  <img class="w-3 h-3" src="img/nft/Group 1053-1.png" alt="">
+                </div>
+                <p class="text-white font-['Manrope'] text-[12px] font-medium leading-[14px]">8.6K</p>
+               </div>
+             </div>
+          </div>
+
+          <div class="item">
+            <div class="img">
+              <img src="img/nft/collection cart-3.png" alt="">
+             </div>
+             <div class="">
+              <h1 class="p-md mt-4 mb-2">Creative arts Collections</h1>
+              <div class="flex">
+                <p class="p-xm">By @Carry_Michel</p>
+                <div class="p-1">
+                  <img src="img/explore/correct.png" alt="">
+                </div>
+               </div>
+               <div class="flex flex-row items-center mt-1">
+                <div class="">
+                  <img class="w-3 h-3" src="img/nft/Group 1053.png" alt="">
+                </div>
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items </p>
+                <div class="p-1 ">
+                  <img class="w-3 h-3" src="img/nft/Group 1053-1.png" alt="">
+                </div>
+                <p class="text-white font-['Manrope'] text-[12px] font-medium leading-[14px]">8.6K</p>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-seller">
+      <div class="container">
+        <div class="head flex items-center justify-between">
+          <div class="title">
+            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl leading-[58px] font-bold font-['Syne']">Top Seller</h1>
+          </div>
+          <div class="flex">
+            <button class="w-10 h-10 rounded-full bg-[#1E2356] hover:bg-[#FA5C6D] flex items-center justify-center"><img src="img/top-seller/left arrow.png" alt=""></button>
+            <button class="w-10 h-10 rounded-full bg-[#1E2356] hover:bg-[#FA5C6D] flex items-center justify-center"><img src="img/top-seller/right-arrow.png" alt=""></button>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 xm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 my-16 gap-y-6">
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img src="img/top-seller/dimond.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-1.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img class="w-3 h-3 rounded-full bg-[#FA5C6D]" src="img/top-seller/dimond-light.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-2.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img src="img/top-seller/dimond.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-3.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img class="w-3 h-3 rounded-full bg-[#FA5C6D]" src="img/top-seller/dimond-light.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-4.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img src="img/top-seller/dimond.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-5.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img class="w-3 h-3 rounded-full bg-[#FA5C6D]" src="img/top-seller/dimond-light.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-6.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img src="img/top-seller/dimond.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img src="img/top-seller/dimond.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-1.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img class="w-3 h-3 rounded-full bg-[#FA5C6D]" src="img/top-seller/dimond-light.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-2.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img src="img/top-seller/dimond.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-3.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img class="w-3 h-3 rounded-full bg-[#FA5C6D]" src="img/top-seller/dimond-light.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-4.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img src="img/top-seller/dimond.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-5.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img class="w-3 h-3 rounded-full bg-[#FA5C6D]" src="img/top-seller/dimond-light.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center">
+            <div class="rounded-full">
+              <img src="img/top-seller/unsplash_Oklzj82ffsQ-6.png" alt="">
+            </div>
+            <div class="title">
+              <h1 class="mt-4 mb-1 font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Carry White</h1>
+              <div class="flex flex-row">
+                <img src="img/top-seller/dimond.png" alt="">
+                <p class="text-white mx-1 font-['Manrope'] text-[12px] font-medium leading-[14px]">680 Items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="easy-step bg-[#1E2356] pt-20 pb-36">
+      <div class="container">
+        <div class="title flex items-center flex-col mb-16">
+          <h1 class="text-white text-3xl md:text-4xl lg:text-5xl leading-[58px] font-bold font-['Syne']">Easy Step For Use</h1>
+          <p class="p-sm text-white mt-2">Toadipasicing volutpaconsequat. Ullamcorper a lacus vestibulum sarcu Aliquam </p>
+        </div>
+        <div class="grid grid-cols-2  sm:grid-cols-4 gap-4 lg:gap-10">
+          <div class="item   flex justify-center flex-col items-center px-0 md:px-3 lg:px-5">
+            <div class="relative w-24 sm:w-20 lg:w-24 h-20 lg:h-24 bg-[#1A1E49] rounded flex items-center justify-center ">
+              <img src="img/easy-step/Vector.png" alt="">
+              <span class=" absolute flex justify-center items-center right-2 bg-[#F9574B] rounded-full w-5 lg:w-7 h-5 lg:h-7 top-[-13px]">
+                <p class="font-['Manrope']  text-white text-xs font-normal ">7</p>
+              </span>
+            </div>
+            <div class="desc mt-4 lg:mt-6">
+              <h1 class="text-white text-base md:text-xl lg:text-2xl lg:leading-[29px] font-medium lg:font-bold font-['Syne'] text-center">Create account by
+                few clicks.</h1>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center px-0 md:px-3 lg:px-5">
+            <div class="  w-24 sm:w-20 lg:w-24 h-20 lg:h-24 bg-[#1A1E49] rounded flex items-center justify-center relative">
+              <img src="img/easy-step/Vector-1.png" alt="">
+              <span class=" absolute flex justify-center items-center right-2 bg-[#F9574B] rounded-full w-5 lg:w-7 h-5 lg:h-7 top-[-13px]">
+                <p class="font-['Manrope']  text-white text-xs font-normal ">7</p>
+              </span>
+            </div>
+            <div class="desc mt-4 lg:mt-6">
+              <h1 class="text-white text-base md:text-xl lg:text-2xl lg:leading-[29px] font-medium lg:font-bold font-['Syne'] text-center">Create account by
+                few clicks.</h1>
+            </div>
+          </div>
+
+          <div class="item flex justify-center flex-col items-center px-0 md:px-3 lg:px-5">
+            <div class=" w-24 sm:w-20 lg:w-24 h-20 lg:h-24 bg-[#1A1E49] rounded flex items-center justify-center relative">
+              <img src="img/easy-step/Vector-2.png" alt="">
+              <span class=" absolute flex justify-center items-center right-2 bg-[#F9574B] rounded-full w-5 lg:w-7 h-5 lg:h-7 top-[-13px]">
+                <p class="font-['Manrope']  text-white text-xs font-normal ">7</p>
+              </span>
+            </div>
+            <div class="desc mt-4 lg:mt-6">
+              <h1 class="text-white text-base md:text-xl lg:text-2xl lg:leading-[29px] font-medium lg:font-bold font-['Syne'] text-center">Create account by
+                few clicks.</h1>
+            </div>
+          </div>
+          <div class="item flex justify-center flex-col items-center px-0 md:px-3 lg:px-5">
+            <div class=" w-24 sm:w-20 lg:w-24 h-20 lg:h-24 bg-[#1A1E49] rounded flex items-center justify-center relative">
+              <img src="img/easy-step/Vector-3.png" alt="">
+              <span class=" absolute flex justify-center items-center right-2 bg-[#F9574B] rounded-full w-5 lg:w-7 h-5 lg:h-7 top-[-13px]">
+                <p class="font-['Manrope']  text-white text-xs font-normal ">7</p>
+              </span>
+            </div>
+            <div class="desc mt-4 lg:mt-6">
+              <h1 class="text-white text-base md:text-xl lg:text-2xl lg:leading-[29px] font-medium lg:font-bold font-['Syne'] text-center">Create account by
+                few clicks.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="auction py-28">
+      <div class="container">
+        <div class="title flex justify-between mb-16">
+          <h1 class="text-white text-3xl md:text-4xl lg:text-5xl leading-[58px] font-bold font-['Syne']">Live Auction</h1>
+          <button class="bg-[#1E2356] rounded-lg flex items-center gap-x-2 font-'Manrope' text-white text-base leading-7 font-semibold py-[8px] md:py-[12px] px-9 md:px-11">Explore More <img class="w-3 h-3" src="img/explore/btn-circle.png" alt=""></button>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 md:gap-x-28 lg:gap-x-6 gap-y-6  px-0
+         md:px-14 lg:px-0">
+          <div class="item bg-[#1E2356] p-4 sm:p-6 lg:p-4 xl:p-6 rounded-lg  ">
+            <div class="img relative">
+              <img  src="img/auction/Rectangle 159.png" alt="">
+              <span class="w-7 h-7 absolute top-5 right-5 flex items-center justify-center rounded-full bg-[#1E2356]"><img src="img/auction/heart.png" alt=""></span>
+            </div>
+            <div class="time flex justify-center items-center mt-2 mb-6">
+              <div class="img ">
+                <img src="img/auction/Vector.png" alt="">
+              </div>
+              <div class="count-down">
+                <ul class="flex">
+                  <li class="">
+                    <p class="text-white font-['Manrope'] text-xs xl:text-base font-medium px-1 xl:px-2">
+                      <span class="px-1 xl:px-2">24d </span>|  
+                      <span class="px-1 xl:px-2">04h</span>| 
+                      <span class="px-1 xl:px-2">04m</span>| 
+                      <span class="px-1 xl:px-2">04s</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="title flex items-start xm:items-center flex-col xm:flex-row justify-between">
+              <div>
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Hills of Taitan</h1>
+                <p class="p-xm">By @Carry_Michel </p>
+              </div>
+              <div class="flex mt-4 xm:mt-0">
+                <img src="img/auction/eth.png" alt="">
+                <h1 class="text-white font-['Manrope'] text-[16px] font-semibold ml-1">0.140ETH</h1>
+              </div>
+            </div>
+            <div class="flex justify-center my-4">
+              <button class="flex items-center justify-center text-white px-11 xl:px-14 py-2 xl:py-3 border border-[#FA5C6D] rounded gap-x-2 ">Bid Now <img src="img/auction/buy.png" alt=""></button>
+            </div>
+          </div>
+
+          <div class="item bg-[#1E2356] p-4 sm:p-6 lg:p-4 xl:p-6 rounded-lg  ">
+            <div class="img relative">
+              <img  src="img/auction/Rectangle 159-1.png" alt="">
+              <span class="w-7 h-7 absolute top-5 right-5 flex items-center justify-center rounded-full bg-[#1E2356]"><img src="img/auction/heart.png" alt=""></span>
+            </div>
+            <div class="time flex justify-center items-center mt-2 mb-6">
+              <div class="img ">
+                <img src="img/auction/Vector.png" alt="">
+              </div>
+              <div class="count-down">
+                <ul class="flex">
+                  <li class="">
+                    <p class="text-white font-['Manrope'] text-xs xl:text-base font-medium px-1 xl:px-2">
+                      <span class="px-1 xl:px-2">24d </span>|  
+                      <span class="px-1 xl:px-2">04h</span>| 
+                      <span class="px-1 xl:px-2">04m</span>| 
+                      <span class="px-1 xl:px-2">04s</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="title flex items-start xm:items-center flex-col xm:flex-row justify-between">
+              <div>
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Hills of Taitan</h1>
+                <p class="p-xm">By @Carry_Michel </p>
+              </div>
+              <div class="flex mt-4 xm:mt-0">
+                <img src="img/auction/eth.png" alt="">
+                <h1 class="text-white font-['Manrope'] text-[16px] font-semibold ml-1">0.140ETH</h1>
+              </div>
+            </div>
+            <div class="flex justify-center my-4">
+              <button class="flex items-center justify-center text-white px-11 xl:px-14 py-2 xl:py-3 border border-[#FA5C6D] rounded gap-x-2 ">Bid Now <img src="img/auction/buy.png" alt=""></button>
+            </div>
+          </div>
+
+          <div class="item bg-[#1E2356] p-4 sm:p-6 lg:p-4 xl:p-6 rounded-lg  ">
+            <div class="img relative">
+              <img  src="img/auction/Rectangle 159-2.png" alt="">
+              <span class="w-7 h-7 absolute top-5 right-5 flex items-center justify-center rounded-full bg-[#1E2356]"><img src="img/auction/heart.png" alt=""></span>
+            </div>
+            <div class="time flex justify-center items-center mt-2 mb-6">
+              <div class="img ">
+                <img src="img/auction/Vector.png" alt="">
+              </div>
+              <div class="count-down">
+                <ul class="flex">
+                  <li class="">
+                    <p class="text-white font-['Manrope'] text-xs xl:text-base font-medium px-1 xl:px-2">
+                      <span class="px-1 xl:px-2">24d </span>|  
+                      <span class="px-1 xl:px-2">04h</span>| 
+                      <span class="px-1 xl:px-2">04m</span>| 
+                      <span class="px-1 xl:px-2">04s</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="title flex items-start xm:items-center flex-col xm:flex-row justify-between">
+              <div>
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Hills of Taitan</h1>
+                <p class="p-xm">By @Carry_Michel </p>
+              </div>
+              <div class="flex mt-4 xm:mt-0">
+                <img src="img/auction/eth.png" alt="">
+                <h1 class="text-white font-['Manrope'] text-[16px] font-semibold ml-1">0.140ETH</h1>
+              </div>
+            </div>
+            <div class="flex justify-center my-4">
+              <button class="flex items-center justify-center text-white px-11 xl:px-14 py-2 xl:py-3 border border-[#FA5C6D] rounded gap-x-2 ">Bid Now <img src="img/auction/buy.png" alt=""></button>
+            </div>
+          </div>
+
+          <div class="item bg-[#1E2356] p-4 sm:p-6 lg:p-4 xl:p-6 rounded-lg  ">
+            <div class="img relative">
+              <img  src="img/auction/Rectangle 159-3.png" alt="">
+              <span class="w-7 h-7 absolute top-5 right-5 flex items-center justify-center rounded-full bg-[#1E2356]"><img src="img/auction/heart.png" alt=""></span>
+            </div>
+            <div class="time flex justify-center items-center mt-2 mb-6">
+              <div class="img ">
+                <img src="img/auction/Vector.png" alt="">
+              </div>
+              <div class="count-down">
+                <ul class="flex">
+                  <li class="">
+                    <p class="text-white font-['Manrope'] text-xs xl:text-base font-medium px-1 xl:px-2">
+                      <span class="px-1 xl:px-2">24d </span>|  
+                      <span class="px-1 xl:px-2">04h</span>| 
+                      <span class="px-1 xl:px-2">04m</span>| 
+                      <span class="px-1 xl:px-2">04s</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="title flex items-start xm:items-center flex-col xm:flex-row justify-between">
+              <div>
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px]">Hills of Taitan</h1>
+                <p class="p-xm">By @Carry_Michel </p>
+              </div>
+              <div class="flex mt-4 xm:mt-0">
+                <img src="img/auction/eth.png" alt="">
+                <h1 class="text-white font-['Manrope'] text-[16px] font-semibold ml-1">0.140ETH</h1>
+              </div>
+            </div>
+            <div class="flex justify-center my-4">
+              <button class="flex items-center justify-center text-white px-11 xl:px-14 py-2 xl:py-3 border border-[#FA5C6D] rounded gap-x-2 ">Bid Now <img src="img/auction/buy.png" alt=""></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="footer px-4 sm:px-0 py-12 md:py-16 lg:py-24 bg-[#1E2356]">
+      <div class="container">
+        <div class="title flex items-center justify-between  pb-11 sm:pb-16">
+          <div class="flex">
+            <img src="img/footer/Vector.png" alt="">
+            <h1 class="text-white text-4xl  font-bold font-['Syne']">Elibeno</h1>
+          </div>
+          <div class="social flex">
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="img/footer/New folder/Vector.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="img/footer/New folder/Vector-1.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="img/footer/New folder/Shape.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="img/footer/New folder/Shape-1.png" alt=""></div>
+          </div>
+        </div>
+
+        <div class="flex justify-between py-10 xl:py-16 border-dashed border-y ">
+          <div class="item1 w-[312px]">
+            <p class="p-sm text-white mb-4">Be can of packed he sighed. On into table is take titles bits avoid afforded step, up true,a ancient indication</p>
+            <div class="flex relative items-center">
+              <input class="w-[100%] h-[50px] p-3 border bg-transparent border-dashed rounded-md focus:outline-none" type="text">
+              <div class="w-10 h-10 absolute right-2 p-3 rounded-lg bg-[#F9574B]">
+              <img class=" " src="img/footer/ic Arrow Go.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item2 hidden xm:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Marketplace</h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+          <div class="item3 hidden sm:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Explore </h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+          <div class="item4 hidden md:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Navigation</h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-11 md:mt-16">
+          <p class="text-white font-['Manrope'] text-[14px] font-normal">© 2022 elibeno.All right reserved</p>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    
+</body> 
+</html>

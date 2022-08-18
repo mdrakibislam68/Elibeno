@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Elibeno</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+      </style>
+</head>
+
+<body class="bg-[#1A1E49] ">
+    <section class="fixed w-[100%] top-0 nav z-[60]">
+        <div class="container"> 
+         <!-- This example requires Tailwind CSS v2.0+ -->
+          <nav class="">
+            <div class="">
+              <div class=" flex items-center justify-between h-16">
+                <div class="inset-y-0   flex items-center md:hidden">
+                  <!-- Mobile menu button-->
+                  <button type="button" id="mobile-btn" onclick="myFunction()" class="peer inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="md:flex-1  md:flex md:justify-between items-center  ">
+                  <a href="/index.html">
+                    <div class="flex-shrink-0 flex items-center">
+                      <img class="hidden md:block h-8 w-auto" src="/img/nav-hero/logo.png" alt="Workflow">
+                      <h1 class="text-2xl md:text-4xl font-bold text-white font-['Syne']">Elibeno</h1>
+                    </div>
+                  </a>
+                  <div class="hidden md:block justify-self-end text-gray-300 font-medium sm:ml-6">
+                    <ul class="flex items-center space-x-2 mr-8">
+                      <li class="nav-item  text-sm  hover:bg-gray-700 px-3 py-2 rounded-md ">
+                         <a href="/index.html" class="nav-link" aria-current="page">Home</a>
+                      </li>
+                      <li class="nav-item active group relative flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 py-2 rounded-md text-sm ">
+                        <a href="#" class="nav-link">
+                          Explore 
+                        </a>
+                        <img class="w-2.5 h-1.5 flex " src="/img/nav-hero/Vector.png" alt="">
+                        <div  class="hidden group-hover:flex absolute flex-col top-[35px] left-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                          <a href="/html/explore.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
+                          <a href="/html/auction.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Live Auction</a>
+                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">contact</a>
+                        </div>
+                      </li>
+                      <li class="nav-item px-3 py-2 rounded-md  hover:bg-gray-700  text-sm font-medium">
+                        <a href="/html/activity.html" class=" nav-link  ">Activity</a>
+                      </li>
+                      <li class="nav-item px-3 py-2 rounded-md  hover:bg-gray-700  text-sm font-medium">
+                        <a href="/html/ranking.html" class=" nav-link  ">Ranking</a>
+                      </li>
+
+                      <li class="nav-item group relative after:contents  flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 py-2 rounded-md text-sm font-medium">
+                        <a href="#" class="">
+                          Pages 
+                        </a>
+                        <img class="w-2.5 h-1.5 flex " src="/img/nav-hero/Vector.png" alt="">
+                        <div  class="hidden group-hover:block absolute  flex-col top-[35px] left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                          <a href="upload.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">upload</a>
+                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">contact</a>
+                        </div>
+                      </li>
+                      <li class="nav-item px-3 py-2 rounded-md   hover:bg-gray-700   text-sm font-medium">
+                        <a type="" class="" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                          Contact
+                      </li>
+                      
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+                <div class="inset-y-0  flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 md:ml-1 sm:pr-0">
+
+                  <!-- user  -->
+                   <div class="ml-1 flex gap-x-2">
+                    <button class="px-5 py-2 border border-[#FA5C6D] rounded hover:bg-[#FA5C6D] flex items-center">
+                      <a href="#" class="font-['Manrope'] text-white text-[12px] font-semibold ">Login</a>
+                    </button>
+                    <button class="px-5 py-2 border border-[#FA5C6D] rounded hover:bg-[#FA5C6D] flex items-center">
+                      <a href="#" class="font-['Manrope'] text-white text-[12px] font-semibold ">Singup</a>
+                    </button>
+                  </div>
+                  
+                 
+
+                 
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden peer-hover:block bg-[#1A1E49]" id="mobile-menu">
+              <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+    </section>
+
+    <section class="explore mt-24 mb-24">
+      <div class="container">
+        <div class="flex justify-between mb-16">
+          <h1 class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[58px] font-bold font-['Syne']">Explore NFTs</h1>
+          <div class="text-white second-nav">
+            <a href="/index.html" class="second-nav-item  p-2 font-['Manrope']  text-[16px] font-semibold">Home</a>>
+            <a href="/html/explore.html" class="second-nav-item active p-2 font-['Manrope']  text-[16px] font-semibold">Explore</a>>
+            <a href="/html/auction.html" class="second-nav-item p-2 font-['Manrope']  text-[16px] font-semibold">Auction</a>>
+
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div class="side-bar col-start-1 col-span-2 md:col-span-1 row-start-1 row-span-1 md:row-span-3  ">
+            <div class="bg-[#1E2356] row-span-2 p-6 flex flex-wrap flex-row md:flex-col gap-y-6">
+              <div class="status w-full">
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Status</h1>
+                <div class="group z-50 relative bg-[#1B1F49]  flex justify-between items-center p-3 rounded-lg hover:bg-[#FA5C6D]">
+                  <p class="text-white font-['Manrope'] text-[16px] font-normal">Buy Now</p>
+                  <img class="group-hover:hidden" src="/img/explore/down-arrow.png" alt="">
+                  <img class="hidden group-hover:block absolute right-3 " src="/img/explore/arrow.png" alt="">
+                  <div class="hidden group-hover:flex absolute bg-[#1B1F49] w-full flex-col gap-y-2 items-center justify-center top-12 left-0 p-3 rounded-lg text-white font-['Manrope'] text-[16px] font-normal" tabindex="-1">
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="status w-full">
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Status</h1>
+                <div class="group z-40 relative bg-[#1B1F49]  flex justify-between items-center p-3 rounded-lg hover:bg-[#FA5C6D]">
+                  <p class="text-white font-['Manrope'] text-[16px] font-normal">Buy Now</p>
+                  <img class="group-hover:hidden" src="/img/explore/down-arrow.png" alt="">
+                  <img class="hidden group-hover:block absolute right-3 " src="/img/explore/arrow.png" alt="">
+                  <div class="hidden group-hover:flex absolute bg-[#1B1F49] w-full flex-col gap-y-2 items-center justify-center top-12 left-0 p-3 rounded-lg text-white font-['Manrope'] text-[16px] font-normal" tabindex="-1">
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" tabindex="-1" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" tabindex="-1" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" tabindex="-1" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="status w-full">
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Status</h1>
+                <div class="group z-30 relative bg-[#1B1F49]  flex justify-between items-center p-3 rounded-lg hover:bg-[#FA5C6D]">
+                  <p class="text-white font-['Manrope'] text-[16px] font-normal">Buy Now</p>
+                  <img class="group-hover:hidden" src="/img/explore/down-arrow.png" alt="">
+                  <img class="hidden group-hover:block absolute right-3 " src="/img/explore/arrow.png" alt="">
+                  <div class="hidden group-hover:flex absolute bg-[#1B1F49] w-full flex-col gap-y-2 items-center justify-center top-12 left-0 p-3 rounded-lg text-white font-['Manrope'] text-[16px] font-normal">
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="status w-full">
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Status</h1>
+                <div class="group z-20 relative bg-[#1B1F49]  flex justify-between items-center p-3 rounded-lg hover:bg-[#FA5C6D]">
+                  <p class="text-white font-['Manrope'] text-[16px] font-normal">Buy Now</p>
+                  <img class="group-hover:hidden" src="/img/explore/down-arrow.png" alt="">
+                  <img class="hidden group-hover:block absolute right-3 " src="/img/explore/arrow.png" alt="">
+                  <div class="hidden group-hover:flex absolute bg-[#1B1F49] w-full flex-col gap-y-2 items-center justify-center top-12 left-0 p-3 rounded-lg text-white font-['Manrope'] text-[16px] font-normal">
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="price w-full">
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Price</h1>
+                <div class="group z-10 relative bg-[#1B1F49]  flex justify-between items-center p-3 rounded-lg ">
+                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                    <div class="bg-[#FA5C6D] h-2.5 rounded-full" style="width: 45%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="status w-full">
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Status</h1>
+                <div class="group z-50 relative bg-[#1B1F49]  flex justify-between items-center p-3 rounded-lg hover:bg-[#FA5C6D]">
+                  <p class="text-white font-['Manrope'] text-[16px] font-normal">Buy Now</p>
+                  <img class="group-hover:hidden" src="/img/explore/down-arrow.png" alt="">
+                  <img class="hidden group-hover:block absolute right-3 " src="/img/explore/arrow.png" alt="">
+                  <div class="hidden group-hover:flex absolute bg-[#1B1F49] w-full flex-col gap-y-2 items-center justify-center top-12 left-0 p-3 rounded-lg text-white font-['Manrope'] text-[16px] font-normal">
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="status w-full">
+                <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Status</h1>
+                <div class="group z-40 relative bg-[#1B1F49]  flex justify-between items-center p-3 rounded-lg hover:bg-[#FA5C6D]">
+                  <p class="text-white font-['Manrope'] text-[16px] font-normal">Buy Now</p>
+                  <img class="group-hover:hidden" src="/img/explore/down-arrow.png" alt="">
+                  <img class="hidden group-hover:block absolute right-3 " src="/img/explore/arrow.png" alt="">
+                  <div class="hidden group-hover:flex absolute bg-[#1B1F49] w-full flex-col gap-y-2 items-center justify-center top-12 left-0 p-3 rounded-lg text-white font-['Manrope'] text-[16px] font-normal">
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                    <a class="hover:bg-[#1E2356] w-full text-center p-2 rounded-lg" href="#">Buy now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="apply w-full">
+                <div class="group z-30 relative flex justify-center items-center p-3 rounded-lg bg-[#FA5C6D]">
+                  <a href="#" class="font-['Manrope'] text-[16px] font-semibold text-black ">Apply</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="/img/explore/Rectangle 159.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="/img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="/img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#FA5C6D] rounded-full w-7 h-7 flex justify-center">
+                <img src="/img/explore/light-eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="/img/explore/img.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="/img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="/img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#FA5C6D] rounded-full w-7 h-7 flex justify-center">
+                <img src="/img/explore/light-eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+          
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="/img/explore/img-1.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="/img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="/img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#FA5C6D] rounded-full w-7 h-7 flex justify-center">
+                <img src="/img/explore/light-eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="/img/explore/img-2.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="/img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="/img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#FA5C6D] rounded-full w-7 h-7 flex justify-center">
+                <img src="/img/explore/light-eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="/img/explore/New folder/Rectangle 159.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="/img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="/img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#FA5C6D] rounded-full w-7 h-7 flex justify-center">
+                <img src="/img/explore/light-eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="/img/explore/New folder/img.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="/img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="/img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#FA5C6D] rounded-full w-7 h-7 flex justify-center">
+                <img src="/img/explore/light-eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+          
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="/img/explore/New folder/img-1.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="/img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="/img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#FA5C6D] rounded-full w-7 h-7 flex justify-center">
+                <img src="/img/explore/light-eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+
+          <div class="item    p-4 lg:p-6 bg-[#1E2356] rounded-lg">
+            <div class="img">
+              <img src="/img/explore/New folder/img-2.png" alt="">
+            </div>
+            <div class="flex items-start xm:items-center justify-between flex-col xm:flex-row ">
+              <div class="flex my-3 xm:my-5 lg:my-9 ">
+                <img src="/img/explore/correct.png" alt="">
+                <p class="p-xm">Available in Stock 4</p>
+              </div>
+              <div class="">
+                <button class="p-2 lg:p-3 flex items-center p-sm text-white justify-between gap-x-1 rounded-lg border-solid border-2 border-[#FA5C6D] hover:bg-[#FA5C6D]">Buy <img src="/img/explore/Buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="mt-2 xm:mt-0">
+              <h1 class="p-md w-[155px] h-[19px]">Comander Taitan</h1>
+              <p class="p-xm">By @Carry_Michel</p>
+            </div>  
+            <div class="flex mt-4 gap-x-2">
+              <div class="p-2 bg-[#FA5C6D] rounded-full w-7 h-7 flex justify-center ">
+                <img src="/img/explore/light-eth.png" alt="">
+              </div>
+              <p class="font-['Manrope'] text-white text-[16px] font-normal">0.140 ETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer px-4 sm:px-0 py-10 md:py-16 lg:py-24 bg-[#1E2356]">
+      <div class="container">
+        <div class="title flex items-center justify-between  pb-7 sm:pb-16">
+          <div class="flex">
+            <img src="/img/footer/Vector.png" alt="">
+            <h1 class="text-white text-4xl  font-bold font-['Syne']">Elibeno</h1>
+          </div>
+          <div class="social flex">
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Vector.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Vector-1.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Shape.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Shape-1.png" alt=""></div>
+          </div>
+        </div>
+
+        <div class="flex justify-between py-7 xl:py-16 border-dashed border-y ">
+          <div class="item1 w-[312px]">
+            <p class="p-sm text-white mb-4">Be can of packed he sighed. On into table is take titles bits avoid afforded step, up true,a ancient indication</p>
+            <div class="flex relative items-center">
+              <input class="w-[100%] h-[50px] p-3 border bg-transparent border-dashed rounded-md focus:outline-none" type="text">
+              <div class="w-10 h-10 absolute right-2 p-3 rounded-lg bg-[#F9574B]">
+              <img class=" " src="/img/footer/ic Arrow Go.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item2 hidden xm:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Marketplace</h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+          <div class="item3 hidden sm:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Explore </h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+          <div class="item4 hidden md:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Navigation</h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-7 md:mt-16">
+          <p class="text-white font-['Manrope'] text-[14px] font-normal">© 2022 elibeno.All right reserved</p>
+        </div>
+      </div>
+    </section>
+    <script src="/js/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/script.js"></script>
+    
+</body> 
+</html>
