@@ -52,6 +52,8 @@
 .hero{
     background-image: url("img/bg.jpg");
 }
+
+/* explore sidebar */
 .select-selected {
   background-color: #1B1F49;
   border-radius: 8px;
