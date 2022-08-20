@@ -725,8 +725,8 @@ th:nth-child(1), td:nth-child(1) {
   top: 0px;
 }
 
-.top-\[37px\] {
-  top: 37px;
+.top-\[35px\] {
+  top: 35px;
 }
 
 .left-0 {
@@ -761,40 +761,16 @@ th:nth-child(1), td:nth-child(1) {
   right: 1.25rem;
 }
 
-.right-3 {
-  right: 0.75rem;
-}
-
-.top-12 {
-  top: 3rem;
-}
-
-.top-\[35px\] {
-  top: 35px;
-}
-
 .z-\[60\] {
   z-index: 60;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
-.z-40 {
-  z-index: 40;
+.z-10 {
+  z-index: 10;
 }
 
 .z-30 {
   z-index: 30;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .col-span-2 {
@@ -1252,10 +1228,6 @@ th:nth-child(1), td:nth-child(1) {
 .gap-x-4 {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
-}
-
-.gap-y-2 {
-  row-gap: 0.5rem;
 }
 
 .gap-x-7 {
@@ -1768,6 +1740,66 @@ th:nth-child(1), td:nth-child(1) {
   background-image: url("img/bg.jpg");
 }
 
+.select-selected {
+  background-color: #1B1F49;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+/* Style the arrow inside the select element: */
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+
+.select-selected.select-arrow-active:after {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  top: 20px;
+}
+
+/* style the items (options), including the selected item: */
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .after\:contents::after {
   content: var(--tw-content);
   display: contents;
@@ -1795,11 +1827,6 @@ th:nth-child(1), td:nth-child(1) {
 .hover\:bg-\[\#F9574B\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 87 75 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#1E2356\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 35 86 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1845,10 +1872,6 @@ th:nth-child(1), td:nth-child(1) {
 
 .group:hover .group-hover\:flex {
   display: flex;
-}
-
-.group:hover .group-hover\:hidden {
-  display: none;
 }
 
 .group:hover .group-hover\:text-white {
@@ -1981,6 +2004,11 @@ th:nth-child(1), td:nth-child(1) {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2072,6 +2100,11 @@ th:nth-child(1), td:nth-child(1) {
   .md\:gap-x-28 {
     -moz-column-gap: 7rem;
          column-gap: 7rem;
+  }
+
+  .md\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 
   .md\:p-4 {
@@ -2354,6 +2387,11 @@ th:nth-child(1), td:nth-child(1) {
 
   .xl\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .xl\:gap-x-2 {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 
   .xl\:p-6 {
