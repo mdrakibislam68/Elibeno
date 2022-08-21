@@ -20,9 +20,9 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        xsm: '0',
-      xm: '0',
-      sm: '0',
+        xsm: '1rem',
+      xm: '1rem',
+      sm: '1rem',
       md: '2rem',
       lg: '2rem',
       xl: '2rem',

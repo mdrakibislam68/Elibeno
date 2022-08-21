@@ -39,9 +39,13 @@
       .btn:hover {
         background-color: #666;
       }
-      .btn.active3 {
+      .btn,.active3 {
         background-color: #666;
         color: white;
+      }
+      td,th{
+        padding:8px;
+        text-align:center;
       }
 
     /* .nav-link{
@@ -50,7 +54,7 @@
 }
 
 .hero{
-    background-image: url("img/bg.jpg");
+    background-image: url("/img/slice.png");
 }
 
 /* explore sidebar */

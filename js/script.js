@@ -1,14 +1,14 @@
 // search bar toggle
 
-// window.addEventListener('DOMContentLoaded', ()=> {
-//     const menuBtn = document.querySelector('#src-img')
-//     const dropdown = document.querySelector('#search-input')
+window.addEventListener('DOMContentLoaded', ()=> {
+    const menuBtn = document.querySelector('#src-img')
+    const dropdown = document.querySelector('#search-input')
 
-//     menuBtn.addEventListener('click', () => {
-//         dropdown.classList.toggle('hidden')
-//         dropdown.classList.toggle('block')
-//     })
-// })
+    menuBtn.addEventListener('click', () => {
+        dropdown.classList.toggle('hidden')
+        dropdown.classList.toggle('block')
+    })
+})
 
 
 // mobile menu 
@@ -44,6 +44,10 @@ jQuery(document).ready(function($){
 
       $('.second-nav-item').click(function(){
         $('.second-nav-item').removeClass("active");
+        $(this).addClass("active");
+      });
+      $('.mob-nav-item').click(function(){
+        $('.mob-nav-item').removeClass("active");
         $(this).addClass("active");
       });
 
@@ -109,7 +113,15 @@ $(document).ready(function(){
 //   }
 // });
 
-
+// explore
+var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+// explore
 
     });
 
@@ -155,4 +167,6 @@ $(document).ready(function(){
             this.className += " active3";
           });
         }
+  
+        
 

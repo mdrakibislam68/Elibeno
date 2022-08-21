@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css"> -->
     <link rel="stylesheet" href="/css/style.css">
-    
+
     <title>Elibeno</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
@@ -14,7 +15,7 @@
 </head>
 
 <body class="bg-[#1A1E49] ">
-  <section class="fixed w-[100%] top-0 nav z-[60]">
+  <section class="fixed w-[100%] top-0 nav z-50 bg-[#1A1E49]">
     <div class="container">
       <!-- This example requires Tailwind CSS v2.0+ -->
       <nav class="">
@@ -120,27 +121,55 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden peer-hover:block bg-[#1A1E49]" id="mobile-menu">
-          <div class="px-2 pt-2 pb-3 space-y-1">
+        <div class="hidden peer-hover:block bg-[#1A1E49] transition-all ease-in-out delay-1000" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 text-gray-300">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-              aria-current="page">Dashboard</a>
+            <a href="/index.html" class=" nav-item  block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page">Home</a>
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+              <div class="nav-item active group relative   flex items-center justify-between gap-x-1 hover:bg-gray-700 px-3 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium w-full">
+              <a href="#" class=" transition-all ease-in-out delay-1000 hover:bg-gray-700 hover:text-white block  py-2 rounded-md text-base font-medium">
+                Explore
+              </a>
+              <div class="hidden z-50  w-full group-hover:block absolute  flex-col top-[47px] left-0 rounded-md shadow-lg text-black bg-white   ring-1 ring-black ring-opacity-5 focus:outline-none px-2 py-2"
+                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <a href="/html/explore.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-0">Account settings</a>
+                <a href="/html/auction.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-1">Live Auction</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block   text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-2">contact</a>
+              </div>
+              <img class=" " src="/img/nav-hero/Vector.png" alt="">
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+            </div>
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+            <a href="/html/activity.html"
+              class="nav-item hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Activity</a>
 
+            <a href="/html/ranking.html"
+              class="nav-item hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ranking</a>
+              <div class="nav-item  group relative flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium w-full">
+              <a href="#" class=" hover:bg-gray-700 hover:text-white block  py-2 rounded-md text-base font-medium">
+                Pages
+              </a>
+              <div class="hidden w-full group-hover:block absolute  flex-col top-[47px] left-0 rounded-md shadow-lg text-black bg-white   ring-1 ring-black ring-opacity-5 focus:outline-none px-2 py-2"
+                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <a href="/html/upload.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-0">Upload</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-1">Support</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block   text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-2">contact</a>
+              </div>
+              <img class=" " src="/img/nav-hero/Vector.png" alt="">
+
+            </div>
           </div>
         </div>
       </nav>
     </div>
   </section>
-
     <section class="explore mt-24 mb-24">
       <div class="container">
         <div class="flex justify-between mb-16">
@@ -198,11 +227,12 @@
               </div>
               <div class="price w-full">
                 <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Price</h1>
-                <div class="group z-10 relative bg-[#1B1F49]  flex justify-between items-center p-3 rounded-lg ">
-                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-[#FA5C6D] h-2.5 rounded-full" style="width: 45%"></div>
+                <div class=" relative bg-[#1B1F49]   p-3 rounded-lg ">
+                  <div data-role="rangeslider" class="text-white font-['Manrope'] text-[12px] font-normal">
+                    <label for="range-1a">Price-Range: <span id="demo"></span></label>
+                    <input class="w-full" name="range-1a" id="myRange" step="100" min="100" max="1000" value="100" type="range">
                   </div>
-                </div>
+                  </div>
               </div>
               <div class="status w-full">
                 <h1 class="font-['Syne'] text-white text-[16px] font-bold leading-[19px] mb-2 ">Status</h1>
@@ -499,20 +529,26 @@
             <h1 class="text-white text-4xl  font-bold font-['Syne']">Elibeno</h1>
           </div>
           <div class="social flex">
-            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Vector.png" alt=""></div>
-            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Vector-1.png" alt=""></div>
-            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Shape.png" alt=""></div>
-            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Shape-1.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Vector.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Vector-1.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Shape.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Shape-1.png" alt=""></div>
           </div>
         </div>
-
+  
         <div class="flex justify-between py-7 xl:py-16 border-dashed border-y ">
           <div class="item1 w-[312px]">
-            <p class="p-sm text-white mb-4">Be can of packed he sighed. On into table is take titles bits avoid afforded step, up true,a ancient indication</p>
+            <p class="p-sm text-white mb-4">Be can of packed he sighed. On into table is take titles bits avoid afforded
+              step, up true,a ancient indication</p>
             <div class="flex relative items-center">
-              <input class="w-[100%] h-[50px] p-3 border bg-transparent border-dashed rounded-md focus:outline-none" type="text">
+              <input id="foot-input" class="w-[100%] h-[50px] p-3 border bg-transparent border-dashed border-[#9EA2C5] rounded-md focus:outline-none text-white"
+                type="text">
               <div class="w-10 h-10 absolute right-2 p-3 rounded-lg bg-[#F9574B]">
-              <img class=" " src="/img/footer/ic Arrow Go.png" alt="">
+                <img class=" " src="/img/footer/ic Arrow Go.png" alt="">
               </div>
             </div>
           </div>
@@ -550,6 +586,7 @@
       </div>
     </section>
     <script src="/js/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script> -->
     <script src="/js/select.js"></script>
     <script src="/js/script.js"></script>
     

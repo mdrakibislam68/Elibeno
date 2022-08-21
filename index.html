@@ -14,7 +14,7 @@
 </head>
 
 <body class="bg-[#1A1E49] ">
-    <section class="fixed w-[100%] top-0 nav ">
+    <section class="fixed w-[100%] top-0 nav z-50">
         <div class="container"> 
          <!-- This example requires Tailwind CSS v2.0+ -->
           <nav class="">
@@ -37,14 +37,14 @@
                 <div class="md:flex-1  md:flex md:justify-between items-center  ">
                   <div class="flex-shrink-0 flex items-center">
                     <img class="hidden md:block h-8 w-auto" src="img/nav-hero/logo.png" alt="Workflow">
-                    <h1 class="text-2xl md:text-4xl font-bold text-white font-['Syne']">Elibeno</h1>
+                    <h1 class="text-2xl lg:text-4xl font-bold text-white font-['Syne']">Elibeno</h1>
                   </div>
                   <div class="hidden md:block justify-self-end text-gray-300 font-medium sm:ml-6">
                     <ul class="flex items-center space-x-2 mr-8">
-                      <li class="nav-item active text-sm  hover:bg-gray-700 px-3 py-2 rounded-md ">
+                      <li class="nav-item active text-sm  hover:bg-gray-700 px-2 lg:px-3 py-1 lg:py-2 rounded-md ">
                          <a href="index.html" class="nav-link" aria-current="page">Home</a>
                       </li>
-                      <li class="nav-item group relative flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 py-2 rounded-md text-sm ">
+                      <li class="nav-item group relative flex items-center justify-between gap-x-1 hover:bg-gray-700  px-2 lg:px-3 py-1 lg:py-2 rounded-md text-sm ">
                         <a href="#" class="nav-link">
                           Explore 
                         </a>
@@ -55,14 +55,14 @@
                           <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">contact</a>
                         </div>
                       </li>
-                      <li class="nav-item px-3 py-2 rounded-md  hover:bg-gray-700  text-sm font-medium">
+                      <li class="nav-item px-2 lg:px-3 py-1 lg:py-2 rounded-md  hover:bg-gray-700  text-sm font-medium">
                         <a href="/html/activity.html" class=" nav-link  ">Activity</a>
                       </li>
-                      <li class="nav-item  px-3 py-2 rounded-md  hover:bg-gray-700  text-sm font-medium">
+                      <li class="nav-item  px-2 lg:px-3 py-1 lg:py-2 rounded-md  hover:bg-gray-700  text-sm font-medium">
                         <a href="/html/ranking.html" class=" nav-link  ">Ranking</a>
                       </li>
 
-                      <li class="nav-item group relative after:contents  flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 py-2 rounded-md text-sm font-medium">
+                      <li class="nav-item group relative after:contents  flex items-center justify-between gap-x-1 hover:bg-gray-700  px-2 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium">
                         <a href="#" class="">
                           Pages 
                         </a>
@@ -73,7 +73,7 @@
                           <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">contact</a>
                         </div>
                       </li>
-                      <li class="nav-item px-3 py-2 rounded-md   hover:bg-gray-700   text-sm font-medium">
+                      <li class="nav-item px-2 lg:px-3 py-1 lg:py-2 rounded-md   hover:bg-gray-700   text-sm font-medium">
                         <a type="" class="" id="menu-button" aria-expanded="true" aria-haspopup="true">
                           Contact
                       </li>
@@ -82,7 +82,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="inset-y-0  flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 md:ml-1 sm:pr-0">
+                <div class="inset-y-0  flex gap-x-3 items-center pr-2 sm:static sm:inset-auto sm:ml-6 md:ml-1 sm:pr-0">
 
                   <!-- user  -->
                    <div class="ml-1 relative">
@@ -95,21 +95,13 @@
                         </button>
                       </a>
                       
-                    </div>  
-
-
-                    <div id="dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                      <!-- Active: "bg-gray-100", Not Active: "" -->
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
                     </div>
                   </div>
-                  <div class=" relative">
-                    <a href="#" class="">
-                      <img class="mx-3 " id="src-img" src="img/nav-hero/search.png" alt="">
-                      <input id="search-input" type="text" class=" hidden absolute top-[-5px] left-[-150px] border-none  focus:hidden rounded-md">
-                      </a>
+                  <div class=" relative ">
+                    <div href="#" class="cursor-pointer ">
+                      <img class="transition-all ease-in-out delay-1000 " id="src-img" src="img/nav-hero/search.png" alt="">
+                      <input id="search-input" type="text" class=" hidden absolute top-[23px] right-[0px] border-none px-2 outline-none rounded-md">
+                    </div>
 
                   </div>
                   <div>
@@ -127,24 +119,57 @@
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="hidden peer-hover:block bg-[#1A1E49]" id="mobile-menu">
-              <div class="px-2 pt-2 pb-3 space-y-1">
+            <div class="hidden peer-hover:block bg-[#1A1E49] transition-all ease-in-out delay-1000" id="mobile-menu">
+              <div class="px-2 pt-2 pb-3 space-y-1 text-gray-300">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
-
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-                
+                <a href="/index.html" class=" nav-item active block px-3 py-2 rounded-md text-base font-medium"
+                  aria-current="page">Home</a>
+    
+                  <div class="nav-item  group relative   flex items-center justify-between gap-x-1 hover:bg-gray-700 px-3 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium w-full">
+                  <a href="#" class=" transition-all ease-in-out delay-1000 hover:bg-gray-700 hover:text-white block  py-2 rounded-md text-base font-medium">
+                    Explore
+                  </a>
+                  <div class="hidden z-50  w-full group-hover:block absolute  flex-col top-[47px] left-0 rounded-md shadow-lg text-black bg-white   ring-1 ring-black ring-opacity-5 focus:outline-none px-2 py-2"
+                    role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <a href="/html/explore.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                      id="menu-item-0">Account settings</a>
+                    <a href="/html/auction.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                      id="menu-item-1">Live Auction</a>
+                    <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block   text-sm" role="menuitem" tabindex="-1"
+                      id="menu-item-2">contact</a>
+                  </div>
+                  <img class=" " src="/img/nav-hero/Vector.png" alt="">
+    
+                </div>
+    
+                <a href="/html/activity.html"
+                  class="nav-item hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Activity</a>
+    
+                <a href="/html/ranking.html"
+                  class="nav-item hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ranking</a>
+                  <div class="nav-item  group relative flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium w-full">
+                  <a href="#" class=" hover:bg-gray-700 hover:text-white block  py-2 rounded-md text-base font-medium">
+                    Pages
+                  </a>
+                  <div class="hidden w-full group-hover:block absolute  flex-col top-[47px] left-0 rounded-md shadow-lg text-black bg-white   ring-1 ring-black ring-opacity-5 focus:outline-none px-2 py-2"
+                    role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <a href="/html/upload.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                      id="menu-item-0">Upload</a>
+                    <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                      id="menu-item-1">Support</a>
+                    <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block   text-sm" role="menuitem" tabindex="-1"
+                      id="menu-item-2">contact</a>
+                  </div>
+                  <img class=" " src="/img/nav-hero/Vector.png" alt="">
+    
+                </div>
               </div>
             </div>
           </nav>
         </div>
     </section>
 
-    <section class="pt-28 xl:pt-[134px]  lg:pb-[135px]" >
+    <section class="hero pt-28 xl:pt-[134px] bg-[/] lg:pb-[135px]" >
       <div class="container">
         <div class="flex flex-col sm:flex-row justify-between">
           <div class="max-w-[600px] md:mb-12 mb-0">
@@ -154,10 +179,9 @@
                 assignment. From</p>
                 <div class="my-7 lg:my-14">
                   <div class='file file--upload rounded-lg relative inline-block justify-center '>
-                    <label for='input-file' class="outline-0 cursor-pointer bg-[#FA5C6D] text-white select-none flex justify-center items-center gap-x-2 rounded-lg font-['Manrope'] text-[16px] font-bold px-4 py-3">
+                    <a  href="/html/upload.html" class="outline-0 cursor-pointer bg-[#FA5C6D] text-white select-none flex justify-center items-center gap-x-2 rounded-lg font-['Manrope'] text-[16px] font-bold px-4 py-3">
                       Upload <img src="/img/nav-hero/up.jpg" alt="">
-                    </label>
-                    <input id='input-file' class="hidden" type='file' />
+                    </a > 
                   </div>
                 </div>
                 <div class="flex xm:flex-row gap-y-4 sm:flex-row gap-x-10 md:gap-x-16 ">
@@ -185,7 +209,7 @@
       <div class="container">
         <div class="flex justify-between mb-16">
           <h1 class="text-white text-3xl md:text-4xl lg:text-5xl leading-[58px] font-bold font-['Syne']">Explore NFTs</h1>
-          <button class="bg-[#1E2356] rounded-lg flex items-center gap-x-2 font-'Manrope' text-white text-base leading-7 font-semibold py-[8px] md:py-[12px] px-9 md:px-11">Explore More <img class="w-3 h-3" src="img/explore/btn-circle.png" alt=""></button>
+          <button class="bg-[#1E2356] rounded-lg flex flex-col xm:flex-row items-center gap-x-2 font-'Manrope' text-white text-base leading-7 font-semibold py-[8px] md:py-[12px] px-3 xm:px-9 md:px-11">Explore More <img class="w-3 h-3" src="img/explore/btn-circle.png" alt=""></button>
         </div>
         
         <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -1014,28 +1038,34 @@
       </div>
     </section>
 
-    <section class="footer px-4 sm:px-0 py-12 md:py-16 lg:py-24 bg-[#1E2356]">
+    <section class="footer px-4 sm:px-0 py-10 md:py-16 lg:py-24 bg-[#1E2356]">
       <div class="container">
-        <div class="title flex items-center justify-between  pb-11 sm:pb-16">
+        <div class="title flex items-center justify-between  pb-7 sm:pb-16">
           <div class="flex">
-            <img src="img/footer/Vector.png" alt="">
+            <img src="/img/footer/Vector.png" alt="">
             <h1 class="text-white text-4xl  font-bold font-['Syne']">Elibeno</h1>
           </div>
           <div class="social flex">
-            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="img/footer/New folder/Vector.png" alt=""></div>
-            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="img/footer/New folder/Vector-1.png" alt=""></div>
-            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="img/footer/New folder/Shape.png" alt=""></div>
-            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="img/footer/New folder/Shape-1.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Vector.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Vector-1.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Shape.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Shape-1.png" alt=""></div>
           </div>
         </div>
-
-        <div class="flex justify-between py-10 xl:py-16 border-dashed border-y ">
+  
+        <div class="flex justify-between py-7 xl:py-16 border-dashed border-y ">
           <div class="item1 w-[312px]">
-            <p class="p-sm text-white mb-4">Be can of packed he sighed. On into table is take titles bits avoid afforded step, up true,a ancient indication</p>
+            <p class="p-sm text-white mb-4">Be can of packed he sighed. On into table is take titles bits avoid afforded
+              step, up true,a ancient indication</p>
             <div class="flex relative items-center">
-              <input class="w-[100%] h-[50px] p-3 border bg-transparent border-dashed rounded-md focus:outline-none" type="text">
+              <input id="foot-input" class="w-[100%] h-[50px] p-3 border bg-transparent border-dashed border-[#9EA2C5] rounded-md focus:outline-none text-white"
+                type="text">
               <div class="w-10 h-10 absolute right-2 p-3 rounded-lg bg-[#F9574B]">
-              <img class=" " src="img/footer/ic Arrow Go.png" alt="">
+                <img class=" " src="/img/footer/ic Arrow Go.png" alt="">
               </div>
             </div>
           </div>
@@ -1067,7 +1097,7 @@
             </ul>
           </div>
         </div>
-        <div class="flex items-center justify-center mt-11 md:mt-16">
+        <div class="flex items-center justify-center mt-7 md:mt-16">
           <p class="text-white font-['Manrope'] text-[14px] font-normal">© 2022 elibeno.All right reserved</p>
         </div>
       </div>

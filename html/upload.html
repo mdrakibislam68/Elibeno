@@ -16,11 +16,11 @@
 </head>
 
 <body class="bg-[#1A1E49] ">
-  <section class="fixed w-[100%] top-0 nav z-[60]">
+  <section class="fixed w-[100%] top-0 nav z-50 bg-[#1A1E49]">
     <div class="container">
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <nav class="">
-        <div class="">
+      <nav  >
+        <div  >
           <div class=" flex items-center justify-between h-16">
             <div class="inset-y-0   flex items-center md:hidden">
               <!-- Mobile menu button-->
@@ -77,16 +77,16 @@
                   </li>
 
                   <li
-                    class="nav-item  active group relative after:contents  flex items-center justify-between gap-x-1 hover:bg-gray-700  px-2 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium">
-                    <a href="#" class="">
+                    class="nav-item active group relative after:contents  flex items-center justify-between gap-x-1 hover:bg-gray-700  px-2 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium">
+                    <a href="#"  >
                       Pages
                     </a>
                     <img class="w-2.5 h-1.5 flex " src="/img/nav-hero/Vector.png" alt="">
                     <div
                       class="hidden group-hover:block absolute  flex-col top-[35px] left-0  w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
                       role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                        id="menu-item-0">Account settings</a>
+                      <a href="upload.html" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                        id="menu-item-0">Upload</a>
                       <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
                         id="menu-item-1">Support</a>
                       <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
@@ -94,7 +94,7 @@
                     </div>
                   </li>
                   <li class="nav-item px-2 lg:px-3 py-1 lg:py-2 rounded-md   hover:bg-gray-700   text-sm font-medium">
-                    <a type="" class="" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    <a type=""   id="menu-button" aria-expanded="true" aria-haspopup="true">
                       Contact
                   </li>
 
@@ -122,21 +122,50 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden peer-hover:block bg-[#1A1E49]" id="mobile-menu">
-          <div class="px-2 pt-2 pb-3 space-y-1">
+        <div class="hidden peer-hover:block bg-[#1A1E49] transition-all ease-in-out delay-1000" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 text-gray-300">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-              aria-current="page">Dashboard</a>
+            <a href="/index.html" class=" nav-item  block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page">Home</a>
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+              <div class="nav-item group relative   flex items-center justify-between gap-x-1 hover:bg-gray-700 px-3 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium w-full">
+              <a href="#" class=" transition-all ease-in-out delay-1000 hover:bg-gray-700 hover:text-white block  py-2 rounded-md text-base font-medium">
+                Explore
+              </a>
+              <div class="hidden z-50  w-full group-hover:block absolute  flex-col top-[47px] left-0 rounded-md shadow-lg text-black bg-white   ring-1 ring-black ring-opacity-5 focus:outline-none px-2 py-2"
+                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <a href="/html/explore.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-0">Account settings</a>
+                <a href="/html/auction.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-1">Live Auction</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block   text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-2">contact</a>
+              </div>
+              <img class=" " src="/img/nav-hero/Vector.png" alt="">
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+            </div>
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+            <a href="/html/activity.html"
+              class="nav-item hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Activity</a>
 
+            <a href="/html/ranking.html"
+              class="nav-item active hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ranking</a>
+              <div class="nav-item  group relative flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium w-full">
+              <a href="#" class=" hover:bg-gray-700 hover:text-white block  py-2 rounded-md text-base font-medium">
+                Pages
+              </a>
+              <div class="hidden w-full group-hover:block absolute  flex-col top-[47px] left-0 rounded-md shadow-lg text-black bg-white   ring-1 ring-black ring-opacity-5 focus:outline-none px-2 py-2"
+                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <a href="/html/upload.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-0">Upload</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-1">Support</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block   text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-2">contact</a>
+              </div>
+              <img class=" " src="/img/nav-hero/Vector.png" alt="">
+
+            </div>
           </div>
         </div>
       </nav>
@@ -171,9 +200,12 @@
                 </div>
                 <div class="flex justify-center items-center flex-col  mt-10">
                     <h1 class="font-['Syne'] text-white text-2xl font-normal leading-[41px]">or Choose a File</h1>
-                    <label for="inputTag" class="cursor-pointer">
-                        <input type="file" class=" py-3 px-6 gap-x-2 bg-[#1A1E49] rounded-lg font-['Manrope'] text-[16px] font-semibold text-white " placeholder="Browse file"></input>
-                    </label>
+                    <div class='file file--upload rounded-lg relative inline-block justify-center '>
+                      <label for='input-file' class="outline-0 cursor-pointer bg-[#1A1E49] text-white select-none flex justify-center items-center gap-x-2 rounded-lg font-['Manrope'] text-[16px] font-bold px-4 py-3">
+                        Browse File <img src="/img/nav-hero/up.jpg" alt="">
+                      </label>
+                      <input id='input-file' class="hidden" type='file' />
+                    </div>
                 </div>
             </div>
             <div class="desc w-full">

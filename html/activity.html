@@ -18,7 +18,7 @@
 </head>
 
 <body class="bg-[#1A1E49] ">
-  <section class="fixed w-[100%] top-0 nav z-[60]">
+  <section class="fixed w-[100%] top-0 nav z-50 bg-[#1A1E49]">
     <div class="container">
       <!-- This example requires Tailwind CSS v2.0+ -->
       <nav class="">
@@ -124,21 +124,50 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden peer-hover:block bg-[#1A1E49]" id="mobile-menu">
-          <div class="px-2 pt-2 pb-3 space-y-1">
+        <div class="hidden peer-hover:block bg-[#1A1E49] transition-all ease-in-out delay-1000" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 text-gray-300">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-              aria-current="page">Dashboard</a>
+            <a href="/index.html" class=" nav-item  block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page">Home</a>
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+              <div class="nav-item group relative   flex items-center justify-between gap-x-1 hover:bg-gray-700 px-3 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium w-full">
+              <a href="#" class=" transition-all ease-in-out delay-1000 hover:bg-gray-700 hover:text-white block  py-2 rounded-md text-base font-medium">
+                Explore
+              </a>
+              <div class="hidden z-50  w-full group-hover:block absolute  flex-col top-[47px] left-0 rounded-md shadow-lg text-black bg-white   ring-1 ring-black ring-opacity-5 focus:outline-none px-2 py-2"
+                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <a href="/html/explore.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-0">Account settings</a>
+                <a href="/html/auction.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-1">Live Auction</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block   text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-2">contact</a>
+              </div>
+              <img class=" " src="/img/nav-hero/Vector.png" alt="">
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+            </div>
 
-            <a href="#"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+            <a href="/html/activity.html"
+              class="nav-item active hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Activity</a>
 
+            <a href="/html/ranking.html"
+              class="nav-item hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ranking</a>
+              <div class="nav-item  group relative flex items-center justify-between gap-x-1 hover:bg-gray-700  px-3 lg:px-3 py-1 lg:py-2 rounded-md text-sm font-medium w-full">
+              <a href="#" class=" hover:bg-gray-700 hover:text-white block  py-2 rounded-md text-base font-medium">
+                Pages
+              </a>
+              <div class="hidden w-full group-hover:block absolute  flex-col top-[47px] left-0 rounded-md shadow-lg text-black bg-white   ring-1 ring-black ring-opacity-5 focus:outline-none px-2 py-2"
+                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <a href="/html/upload.html" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-0">Upload</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block  text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-1">Support</a>
+                <a href="#" class="hover:bg-gray-300 rounded-md px-3 py-2 block   text-sm" role="menuitem" tabindex="-1"
+                  id="menu-item-2">contact</a>
+              </div>
+              <img class=" " src="/img/nav-hero/Vector.png" alt="">
+
+            </div>
           </div>
         </div>
       </nav>
@@ -319,63 +348,69 @@
     </section>
 
     <section class="footer px-4 sm:px-0 py-10 md:py-16 lg:py-24 bg-[#1E2356]">
-        <div class="container">
-          <div class="title flex items-center justify-between  pb-7 sm:pb-16">
-            <div class="flex">
-              <img src="/img/footer/Vector.png" alt="">
-              <h1 class="text-white text-4xl  font-bold font-['Syne']">Elibeno</h1>
-            </div>
-            <div class="social flex">
-              <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Vector.png" alt=""></div>
-              <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Vector-1.png" alt=""></div>
-              <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Shape.png" alt=""></div>
-              <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img src="/img/footer/New folder/Shape-1.png" alt=""></div>
-            </div>
+      <div class="container">
+        <div class="title flex items-center justify-between  pb-7 sm:pb-16">
+          <div class="flex">
+            <img src="/img/footer/Vector.png" alt="">
+            <h1 class="text-white text-4xl  font-bold font-['Syne']">Elibeno</h1>
           </div>
-  
-          <div class="flex justify-between py-7 xl:py-16 border-dashed border-y ">
-            <div class="item1 w-[312px]">
-              <p class="p-sm text-white mb-4">Be can of packed he sighed. On into table is take titles bits avoid afforded step, up true,a ancient indication</p>
-              <div class="flex relative items-center">
-                <input class="w-[100%] h-[50px] p-3 border bg-transparent border-dashed rounded-md focus:outline-none" type="text">
-                <div class="w-10 h-10 absolute right-2 p-3 rounded-lg bg-[#F9574B]">
-                <img class=" " src="/img/footer/ic Arrow Go.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="item2 hidden xm:block">
-              <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Marketplace</h1>
-              <ul class="mt-10">
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
-              </ul>
-            </div>
-            <div class="item3 hidden sm:block">
-              <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Explore </h1>
-              <ul class="mt-10">
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
-              </ul>
-            </div>
-            <div class="item4 hidden md:block">
-              <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Navigation</h1>
-              <ul class="mt-10">
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
-                <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex items-center justify-center mt-7 md:mt-16">
-            <p class="text-white font-['Manrope'] text-[14px] font-normal">© 2022 elibeno.All right reserved</p>
+          <div class="social flex">
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Vector.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Vector-1.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Shape.png" alt=""></div>
+            <div class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-[#F9574B]"><img
+                src="/img/footer/New folder/Shape-1.png" alt=""></div>
           </div>
         </div>
-      </section>
+  
+        <div class="flex justify-between py-7 xl:py-16 border-dashed border-y ">
+          <div class="item1 w-[312px]">
+            <p class="p-sm text-white mb-4">Be can of packed he sighed. On into table is take titles bits avoid afforded
+              step, up true,a ancient indication</p>
+            <div class="flex relative items-center">
+              <input id="foot-input" class="w-[100%] h-[50px] p-3 border bg-transparent border-dashed border-[#9EA2C5] rounded-md focus:outline-none text-white"
+                type="text">
+              <div class="w-10 h-10 absolute right-2 p-3 rounded-lg bg-[#F9574B]">
+                <img class=" " src="/img/footer/ic Arrow Go.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item2 hidden xm:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Marketplace</h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+          <div class="item3 hidden sm:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Explore </h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+          <div class="item4 hidden md:block">
+            <h1 class="font-['Syne'] text-white text-[18px] font-bold leading-[22px]">Navigation</h1>
+            <ul class="mt-10">
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Categories</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">Affiliate Program</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">FAQs</li>
+              <li class=" text-white font-['Manrope'] text-[16px] font-normal">News & Press</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-7 md:mt-16">
+          <p class="text-white font-['Manrope'] text-[14px] font-normal">© 2022 elibeno.All right reserved</p>
+        </div>
+      </div>
+    </section>
       <script src="/js/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="/js/script.js"></script>
       
