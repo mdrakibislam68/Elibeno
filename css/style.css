@@ -774,10 +774,6 @@ td,th{
   z-index: 50;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1347,6 +1343,18 @@ td,th{
 .bg-\[\#1B1F49\] {
   --tw-bg-opacity: 1;
   background-color: rgb(27 31 73 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-2 {
